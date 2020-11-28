@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "262461267144",
+    "firebase_url": "https://bull-rent-c8d05.firebaseio.com",
+    "project_id": "bull-rent-c8d05",
+    "storage_bucket": "bull-rent-c8d05.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:262461267144:android:0336fac0fae123415fd9fd",
+        "android_client_info": {
+          "package_name": "com.example.bullrent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "262461267144-1kct1ve3b32ecgnoelj7edjhhjvp1tgc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bullrent",
+            "certificate_hash": "4c081fe2dac123ce2b1b559858c87f6099662539"
+          }
+        },
+        {
+          "client_id": "262461267144-5umqavime8kfig1pdko84n0g4alh55fg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBk72bDzzZ-Y3yLfJU-7jWrzaLn6WGZU6A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "262461267144-5umqavime8kfig1pdko84n0g4alh55fg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/logimage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:transitionName="logo_image"
+        android:src="@drawable/yellowcar"/>
+    <TextView
+        android:id="@+id/logo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome "
+        android:textSize="30sp"
+        android:transitionName="logo_text"
+        android:fontFamily="@font/bangers"
+        android:textColor="#000"/>
+    <TextView
+        android:id="@+id/slogan_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:transitionName="downText"
+        android:text="Sign In to start your new journey"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:focusable="true"
+            android:textColorHint="#000000"
+            app:boxStrokeColor="#000000"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+           >
+
+            <EditText
+                android:id="@+id/sfullname"
+                android:layout_width="330dp"
+                android:layout_height="40dp"
+                android:hint="FULL NAME"
+                android:layout_marginTop="5dp"
+
+                android:textSize="15dp"
+                android:textStyle="italic" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:textColorHint="#000000"
+            app:boxStrokeColor="#000000"
+            app:counterEnabled="true"
+
+           >
+
+            <EditText
+                android:id="@+id/suserid"
+                android:layout_width="330dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:layout_marginTop="5dp"
+                android:hint="USER NAME"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:textColorHint="#0B0C0C"
+            app:boxStrokeColor="#0000"
+           >
+
+            <EditText
+                android:id="@+id/smobile"
+                android:layout_width="330dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:hint="MO. NO."
+                android:layout_marginTop="5dp"
+                android:textSize="15dp"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textStyle="italic" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:textColorHint="#000000"
+            app:boxStrokeColor="#000000"
+           >
+
+            <EditText
+                android:id="@+id/sgmail"
+                android:layout_width="330dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:hint="G MAIL"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:transitionName="gemail_logo"
+                android:layout_marginTop="5dp"
+                android:textStyle="italic" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:textColorHint="#000000"
+            app:boxStrokeColor="#000000"
+
+            app:passwordToggleEnabled="true">
+
+            <EditText
+
+                android:id="@+id/spassid"
+                android:layout_width="330dp"
+                android:layout_height="40dp"
+                android:ems="10"
+
+                android:hint="PASSWORD"
+                android:layout_marginTop="5dp"
+                android:inputType="textPassword"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:transitionName="pass_logo"
+                android:textStyle="italic" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#000000"
+            android:elevation="0dp"
+            android:text="GO"
+            android:textSize="20dp"
+            android:transitionName="go_logo"
+            android:textColor="#ffff"
+            android:onClick="registerUser"/>
+
+        <Button
+            android:id="@+id/alreadyhave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#ffffff"
+
+            android:transitionName="user_signup_logo"
+            android:text="Alredy have an account, log in"
+            android:textSize="10dp"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+</LinearLayout>
